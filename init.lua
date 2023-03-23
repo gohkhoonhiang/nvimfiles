@@ -19,6 +19,7 @@ vim.cmd("set autoindent expandtab tabstop=2 shiftwidth=2")
 vim.cmd("set mouse=")
 
 -- Load plugins
+require("conf.settings")
 require("conf.lazy")
 require("conf.nvim-tree")
 require("conf.melange-nvim")
