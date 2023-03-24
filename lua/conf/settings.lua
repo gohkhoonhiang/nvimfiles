@@ -23,3 +23,5 @@ m.nmap("<leader>f", ":NvimTreeToggle<CR>")
 m.nmap("<leader>hs", ":split<CR>")
 m.nmap("<leader>vs", ":vsplit<CR>")
 m.nmap("<leader>e", ":tabedit<CR>")
+-- wrap
+m.nmap("<leader>w", ":set wrap!<CR>")
