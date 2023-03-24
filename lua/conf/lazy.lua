@@ -11,6 +11,9 @@ require("lazy").setup({
     },
     {
       "savq/melange-nvim"
+    },
+    {
+      "lewis6991/gitsigns.nvim"
     }
   },
   {
