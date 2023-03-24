@@ -17,8 +17,6 @@ vim.opt.colorcolumn = "119,120"
 vim.opt.showtabline = 2 -- always show
 
 ------ Key bindings
--- toggle nvim-tree
-m.nmap("<leader>f", ":NvimTreeToggle<CR>")
 -- windows
 m.nmap("<leader>hs", ":split<CR>")
 m.nmap("<leader>vs", ":vsplit<CR>")

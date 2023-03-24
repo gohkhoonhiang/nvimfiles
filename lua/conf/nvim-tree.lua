@@ -19,3 +19,8 @@ require("nvim-tree").setup({
     ignore = false
   }
 })
+
+-- Key bindings
+local m = require("conf.mappings")
+
+m.nmap("<leader>f", ":NvimTreeToggle<CR>")
