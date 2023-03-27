@@ -9,7 +9,7 @@ require("telescope").setup({
         ["qqq"] = require("telescope.actions").close,
       },
       n = {
-        ["q"] = require('telescope.actions').close,
+        ["q"] = require("telescope.actions").close,
       }
     },
     file_ignore_patterns = {
