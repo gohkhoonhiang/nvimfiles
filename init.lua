@@ -18,6 +18,9 @@ vim.cmd("set autoindent expandtab tabstop=2 shiftwidth=2")
 -- Disable mouse in nvim
 vim.cmd("set mouse=")
 
+-- Show line numbers
+vim.cmd("set number")
+
 -- Load plugins
 require("conf.settings")
 require("conf.lazy")

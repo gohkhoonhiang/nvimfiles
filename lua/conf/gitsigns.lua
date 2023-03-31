@@ -10,7 +10,8 @@ require("gitsigns").setup({
     topdelete    = { text = "‾" },
     changedelete = { text = "~" },
     untracked    = { text = "?" },
-  }
+  },
+  signcolumn = true
 })
 
 -- Key bindings
