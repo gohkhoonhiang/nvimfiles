@@ -27,6 +27,9 @@ require("lazy").setup({
       dependencies = {
         "nvim-lua/plenary.nvim"
       }
+    },
+    {
+      "posva/vim-vue"
     }
   },
   {
