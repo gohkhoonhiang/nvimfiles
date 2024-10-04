@@ -34,7 +34,16 @@ require("lazy").setup({
     },
     {
       "kevinhwang91/nvim-bqf"
-    }
+    },
+    {
+      "neovim/nvim-lspconfig"
+    },
+    {
+      "williamboman/mason.nvim"
+    },
+    {
+      "williamboman/mason-lspconfig.nvim"
+    },
   },
   {
     root = vim.fn.stdpath("config") .. "/plugins",
