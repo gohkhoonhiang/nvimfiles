@@ -44,6 +44,18 @@ require("lazy").setup({
     {
       "williamboman/mason-lspconfig.nvim"
     },
+    {
+      "hrsh7th/nvim-cmp",
+      dependencies = {
+        --"hrsh7th/cmp-path",
+        --"hrsh7th/cmp-cmdline",
+        "hrsh7th/cmp-nvim-lsp",
+        --"hrsh7th/cmp-nvim-lsp-signature-help",
+        --"ZwodahS/cmp-nvim-tags",
+        --"ZwodahS/cmp-vsnip",
+      },
+      priority = 300,
+    },
   },
   {
     root = vim.fn.stdpath("config") .. "/plugins",
