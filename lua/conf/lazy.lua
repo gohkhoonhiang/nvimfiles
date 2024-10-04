@@ -31,6 +31,9 @@ require("lazy").setup({
     },
     {
       "posva/vim-vue"
+    },
+    {
+      "kevinhwang91/nvim-bqf"
     }
   },
   {

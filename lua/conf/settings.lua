@@ -23,3 +23,5 @@ m.nmap("<leader>vs", ":vsplit<CR>")
 m.nmap("<leader>e", ":tabedit<CR>")
 -- wrap
 m.nmap("<leader>w", ":set wrap!<CR>")
+-- telescope
+m.nmap("<C-T><C-W>", "<cmd>Telescope grep_string<CR>")
