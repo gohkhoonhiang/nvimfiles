@@ -1,23 +1,9 @@
-require("mason").setup()
-
+local nvim_lsp = require("lspconfig")
+local cmp = require("cmp_nvim_lsp")
 local capabilities = vim.lsp.protocol.make_client_capabilities()
-local mason_lspconfig = require("mason-lspconfig")
-local servers = {
-  ruby_lsp = {},
-}
+capabilities.textDocument.completion.completionItem.snippetSupport = true
 
-mason_lspconfig.setup {
-  ensure_installed = vim.tbl_keys(servers),
+nvim_lsp.ruby_lsp.setup{
+  cmd = { vim.fn.stdpath("config") .. "/bin/ruby-lsp" },
+  capabilities = cmp.default_capabilities(capabilities)
 }
-
-mason_lspconfig.setup_handlers {
-  function(server_name)
-    require("lspconfig")[server_name].setup {
-      capabilities = capabilities,
-      on_attach = on_attach,
-      settings = servers[server_name],
-      filetypes = (servers[server_name] or {}).filetypes,
-    }
-  end
-}
-
