@@ -56,6 +56,15 @@ require("lazy").setup({
       },
       priority = 300,
     },
+    {
+      "ZwodahS/outline.nvim", lazy = true,
+      cmd = { "Outline", "OutlineOpen" },
+      keys = {
+       { ",O", "<cmd>topleft OutlineOpen<CR>", desc = "Toggle outline" },
+       { ",o", "<cmd>topleft Outline!<CR>", desc = "Toggle outline" },
+       { ",f", "<cmd>OutlineFocus<CR>", desc = "Toggle outline focus" },
+      },
+    },
   },
   {
     root = vim.fn.stdpath("config") .. "/plugins",
