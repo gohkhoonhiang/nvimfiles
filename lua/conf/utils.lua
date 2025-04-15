@@ -2,7 +2,7 @@
 function nbex(command)
   local filename = vim.fn.expand("%")
   vim.cmd("new")
-  vim.cmd("%!" .. command .. " " .. filename)
+  vim.cmd("silent %!" .. command .. " " .. filename)
 end
 
 local M = {}
