@@ -32,3 +32,5 @@ m.nmap("gd","<cmd>tab split | lua vim.lsp.buf.definition()<CR>")
 m.nmap("gf","<cmd>lua vim.lsp.buf.references()<CR>")
 m.nmap("K","<cmd>lua vim.lsp.buf.hover()<CR>")
 m.nmap("gs","<cmd>lua vim.lsp.buf.signature_help()<CR>")
+-- ruby
+m.nmap("<leader>rb", "<cmd>lua require('conf.utils').nbex('bundle exec rubocop')<CR>")
