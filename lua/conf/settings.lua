@@ -21,6 +21,7 @@ vim.opt.showtabline = 2 -- always show
 m.nmap("<leader>hs", ":split<CR>")
 m.nmap("<leader>vs", ":vsplit<CR>")
 m.nmap("<leader>e", ":tabedit<CR>")
+m.nmap("<leader>ef", ":tabedit <cfile><CR>")
 -- wrap
 m.nmap("<leader>w", ":set wrap!<CR>")
 -- telescope
