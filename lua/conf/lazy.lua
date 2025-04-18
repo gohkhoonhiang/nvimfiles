@@ -13,6 +13,16 @@ require("lazy").setup({
       "savq/melange-nvim"
     },
     {
+      "ellisonleao/gruvbox.nvim",
+      priority = 1000,
+      config = true
+    },
+    {
+      "xero/miasma.nvim",
+      lazy = false,
+      priority = 1000
+    },
+    {
       "lewis6991/gitsigns.nvim"
     },
     {
