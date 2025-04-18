@@ -80,7 +80,11 @@ require("lazy").setup({
     },
     {
       "folke/trouble.nvim"
-    }
+    },
+    {
+      "lima1909/resty.nvim",
+      dependencies = { "nvim-lua/plenary.nvim" },
+    },
   },
   {
     root = vim.fn.stdpath("config") .. "/plugins",

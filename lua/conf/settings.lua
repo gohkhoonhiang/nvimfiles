@@ -35,3 +35,6 @@ m.nmap("gs","<cmd>lua vim.lsp.buf.signature_help()<CR>")
 -- ruby
 m.nmap("<leader>rb", "<cmd>lua require('conf.utils').nbex('bundle exec rubocop')<CR>")
 m.nmap("<leader>rs", "<cmd>lua require('conf.utils').nbex('bin/rspec')<CR>")
+-- resty
+m.nmap("<leader>rr", "<cmd>Resty run<CR>")
+m.nmap("<leader>jpp", ":%!jq .<CR>")
