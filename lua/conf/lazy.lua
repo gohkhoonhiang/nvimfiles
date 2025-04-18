@@ -75,6 +75,10 @@ require("lazy").setup({
        { ",f", "<cmd>OutlineFocus<CR>", desc = "Toggle outline focus" },
       },
     },
+    {
+      "nvim-lualine/lualine.nvim",
+      dependencies = { "nvim-tree/nvim-web-devicons" }
+    }
   },
   {
     root = vim.fn.stdpath("config") .. "/plugins",

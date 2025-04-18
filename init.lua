@@ -24,6 +24,7 @@ vim.cmd("set number")
 -- Load plugins
 require("conf.settings")
 require("conf.lazy")
+require("conf.lualine")
 require("conf.nvim-tree")
 require("conf.miasma-nvim")
 require("conf.gitsigns")
