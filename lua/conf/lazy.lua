@@ -85,6 +85,12 @@ require("lazy").setup({
       "lima1909/resty.nvim",
       dependencies = { "nvim-lua/plenary.nvim" },
     },
+    {
+      "lukas-reineke/indent-blankline.nvim",
+      config = function()
+        require("ibl").setup()
+      end
+    }
   },
   {
     root = vim.fn.stdpath("config") .. "/plugins",
