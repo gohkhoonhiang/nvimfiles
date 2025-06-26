@@ -24,6 +24,7 @@ m.nmap("<leader>e", ":tabedit<CR>")
 m.nmap("<leader>ef", ":tabedit <cfile><CR>")
 m.nmap("<leader>sh", ":windo wincmd K<CR>") --- switch to horizontal
 m.nmap("<leader>sv", ":windo wincmd H<CR>") --- switch to vertical
+m.nmap("<leader>t", "<C-W>gf<CR>") --- open file under cursor in new tab
 -- wrap
 m.nmap("<leader>w", ":set wrap!<CR>")
 -- telescope
