@@ -90,7 +90,10 @@ require("lazy").setup({
       config = function()
         require("ibl").setup()
       end
-    }
+    },
+    {
+      "zbirenbaum/copilot.lua"
+    },
   },
   {
     root = vim.fn.stdpath("config") .. "/plugins",
