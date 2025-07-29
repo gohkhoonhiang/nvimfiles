@@ -20,7 +20,15 @@ require("telescope").setup({
     },
     sorters = "fuzzy_with_index_bias",
   },
+  extensions = {
+    ["ui-select"] = {
+      require("telescope.themes").get_dropdown {
+        -- even more opts
+      }
+    }
+  }
 })
+require("telescope").load_extension("ui-select")
 
 -- Key bindings
 local m = require("conf.mappings")

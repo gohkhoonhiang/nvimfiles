@@ -39,6 +39,9 @@ require("lazy").setup({
       }
     },
     {
+      "nvim-telescope/telescope-ui-select.nvim"
+    },
+    {
       "posva/vim-vue"
     },
     {
@@ -93,6 +96,14 @@ require("lazy").setup({
     },
     {
       "zbirenbaum/copilot.lua"
+    },
+    {
+      "CopilotC-Nvim/CopilotChat.nvim",
+      dependencies = {
+        { "zbirenbaum/copilot.lua" }, -- or zbirenbaum/copilot.lua
+        { "nvim-lua/plenary.nvim", commit = "b9fd522" }, -- for curl, log and async functions
+      },
+      build = "make tiktoken",
     },
   },
   {
